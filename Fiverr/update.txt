@@ -1,0 +1,9 @@
+Updated - files
+Schema.sql - Added two keys to Table
+Offer.php - New function OfferExists to make sure there is no duplicate offers.
+Offer.php - Replaced Get offer IDs from id to OFfer_id 
+Handleforms.php - Warning function prompt when doing dupe offers.
+
+Prelim - Updates
+FIVERR Admin Folder - Copied from Client and added new files to be able create Categories and Sub categories.
+Freelancer - is now able to use said categories created by the admin
