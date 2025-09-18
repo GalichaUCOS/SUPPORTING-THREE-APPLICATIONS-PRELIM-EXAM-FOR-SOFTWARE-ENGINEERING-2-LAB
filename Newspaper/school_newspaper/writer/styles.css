@@ -1,0 +1,156 @@
+/* General body styles */
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa 0%, #fffde7 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #4CAF50 !important;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff !important;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-brand::before {
+    content: "";
+    display: inline-block;
+    background: url('https://cdn-icons-png.flaticon.com/128/3135/3135768.png') no-repeat center/cover;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #fff !important;
+    margin-right: 8px;
+    transition: color 0.2s;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #ffd600 !important;
+    text-shadow: 1px 1px 2px #33333333;
+}
+
+/* Notification bell styles */
+.navbar .fa-bell {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-left: 10px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.badge-danger {
+    background: #ff5252;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    padding: 3px 6px;
+    position: absolute;
+    top: -7px;
+    right: -10px;
+    z-index: 2;
+}
+
+/* Card styles for articles */
+.card {
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.08);
+    border: none;
+    margin-bottom: 1.5rem;
+    background: #fffbe7;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.16);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    color: #388e3c;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.btn-primary, .btn-success {
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #388e3c22;
+}
+
+.btn-primary {
+    background-color: #388e3c;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2e7031;
+}
+
+.btn-success {
+    background-color: #ffd600;
+    color: #333;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #ffe082;
+    color: #222;
+}
+
+/* Kid-friendly extras */
+h1, h2, h3, .display-4 {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, Arial, sans-serif;
+    color: #388e3c;
+    text-shadow: 1px 2px 0 #ffd60044;
+}
+
+img.cartoon {
+    border-radius: 50%;
+    border: 3px solid #ffd600;
+    box-shadow: 0 2px 8px #388e3c22;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .navbar {
+        border-radius: 0 0 10px 10px;
+    }
+}
